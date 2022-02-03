@@ -2,7 +2,11 @@ package com.mph.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+/**
+ * 
+ * @author abhishek
+ *
+ */
 @Entity
 public class Route {
 
@@ -17,6 +21,14 @@ public class Route {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	/**
+	 * 
+	 * @param rid is the route Id
+	 * @param busno
+	 * @param location
+	 * @param starttime
+	 * @param reachtime
+	 */
 
 	public Route(int rid, int busno, String location, String starttime, String reachtime) {
 		super();
@@ -30,6 +42,10 @@ public class Route {
 	public int getRid() {
 		return rid;
 	}
+	/**
+	 * 
+	 * @param rid
+	 */
 
 	public void setRid(int rid) {
 		this.rid = rid;
@@ -42,10 +58,15 @@ public class Route {
 	public void setBusno(int busno) {
 		this.busno = busno;
 	}
+	
 
 	public String getLocation() {
 		return location;
 	}
+	/**
+	 * 
+	 * @param location to get location of bus
+	 */
 
 	public void setLocation(String location) {
 		this.location = location;
@@ -54,6 +75,10 @@ public class Route {
 	public String getStarttime() {
 		return starttime;
 	}
+	/**
+	 * 
+	 * @param starttime to get what is the start time of bus
+	 */
 
 	public void setStarttime(String starttime) {
 		this.starttime = starttime;
@@ -62,7 +87,10 @@ public class Route {
 	public String getReachtime() {
 		return reachtime;
 	}
-
+    /**
+     * 
+     * @param reachtime to get what is the reach time of bus
+     */
 	public void setReachtime(String reachtime) {
 		this.reachtime = reachtime;
 	}

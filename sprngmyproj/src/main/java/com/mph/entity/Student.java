@@ -8,7 +8,7 @@ import javax.persistence.Id;
  * 
  * @author BhanuPriya
  * 
- * @version 1.0
+ *
  */
 
 @Entity
@@ -28,6 +28,16 @@ public class Student {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	/**
+	 * creates an student with the specified name.
+	 * @param sid is student id
+	 * @param sname student name
+	 * @param address of student 
+	 * @param phno student phone number
+	 * @param gender of student
+	 * @param busno of student
+	 * @param status of student paid or not
+	 */
 
 	public Student(int sid, String sname, String address, String phno, String gender, int busno, String status) {
 		super();
@@ -58,8 +68,8 @@ public class Student {
 	}
 	/**
 	 * 
-	 * @param sname
-	 * @return Student name
+	 * @param  get sname
+	 * @return  get Student name
 	 */
 	public void setSname(String sname) {
 		this.sname = sname;
